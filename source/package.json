@@ -10,8 +10,8 @@
     "microservice"
   ],
   "repository": {
-     "type" : "git",
-     "url" : "https://github.com/grizzlypeaksoftware/mastering_microservices_nodejs.git"
+    "type": "git",
+    "url": "https://github.com/grizzlypeaksoftware/mastering_microservices_nodejs.git"
   },
   "author": "Shane Larson",
   "license": "ISC",

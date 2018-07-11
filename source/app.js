@@ -2,16 +2,12 @@ var express = require('express');
 var app = express();
 var path = require('path');
 
-var config = require('config');
-var microserviceConfig = config.get('microservice.config');
-
 const bodyParser = require('body-parser');
 // configure the app to use bodyParser()
 app.use(bodyParser.urlencoded({
     extended: true
 }));
 app.use(bodyParser.json());
-
 
 app.engine('pug', require('pug').__express)
 app.set('views', path.join(__dirname, 'views'));
@@ -40,7 +36,8 @@ app.post('/insert', function(req,res){
 	});	
 });
 
-var server = app.listen(microserviceConfig.port, microserviceConfig.host,  function () {
+
+var server = app.listen(process.env.PORT, function () {
 	var host = server.address().address;
 	var port = server.address().port;
 	
