@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 var path = require('path');
+require('dotenv').load();
 
 const bodyParser = require('body-parser');
 // configure the app to use bodyParser()
@@ -35,7 +36,6 @@ app.post('/insert', function(req,res){
 		res.send(err);
 	});	
 });
-
 
 var server = app.listen(process.env.PORT, function () {
 	var host = server.address().address;
