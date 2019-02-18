@@ -1,0 +1,11 @@
+{
+  "name": "cpu_intensive",
+  "version": "1.0.0",
+  "description": "Sample Code to demonstrate forking a worker process in node.js",
+  "main": "example_fork.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shane Larson",
+  "license": "ISC"
+}
