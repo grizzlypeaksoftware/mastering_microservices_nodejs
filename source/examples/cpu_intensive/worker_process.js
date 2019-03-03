@@ -1,6 +1,6 @@
-const { sleep } = require('sleep');
+//const { sleep } = require('sleep');
 process.on('message', ({ customerID }) => {
-  sleep(5); // ARTIFICIAL CPU INTENSIVE
+  //sleep(5); // ARTIFICIAL CPU INTENSIVE
   let data = {};
   switch (customerID) {
     case 'customer1':

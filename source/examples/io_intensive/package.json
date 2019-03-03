@@ -1,0 +1,14 @@
+{
+  "name": "io_intensive",
+  "version": "1.0.0",
+  "description": "io intensive",
+  "main": "example_asynch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shane Larson",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
